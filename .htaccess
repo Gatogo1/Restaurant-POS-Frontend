@@ -1,0 +1,94 @@
+RewriteEngine on
+
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteRule ^dashboard?$ index.html
+RewriteRule ^order?$ orders.html
+RewriteRule ^report?$ analytics.html
+RewriteRule ^menu?$ menu.html
+RewriteRule ^customer?$ customer.html
+
+   <table id="example_table" class="table-customer  w-100 table-bordered">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>number</th>
+                            <th>date</th>
+                            <th>Total order</th>
+                            <th>Total Purchase</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Colt Adams</td>
+                            <td>16740326 5320</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ivan Guzman</td>
+                            <td>16690719 5330</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Elijah Christian</td>
+                            <td>16231202 4728</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Vladimir Barrera</td>
+                            <td>16730519 2572</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hector Campos</td>
+                            <td>16821016 9515</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Axel Deleon</td>
+                            <td>16030604 5196</td>
+                            <td>1/23/203</td>
+                            <td>23</td>
+                            <td>$9,320.00</td>
+                            <td><button type="button" class="btn btn-primary view-details">Send Massage</button></td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>name</th>
+                                <th>number</th>
+                                <th>date</th>
+                                <th>Total order</th>
+                                <th>Total Purchase</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                    </tbody>
+                    </table>

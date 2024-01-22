@@ -1,0 +1,298 @@
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+
+a:hover {
+    text-decoration: none;
+  }
+
+/* nav bar start */
+nav{
+    background-color: #1D211C;
+}
+
+/* nav bar end */
+
+
+/*menu start*/
+
+.menu-list{
+    background-color: #1D211C;
+    position: relative;
+}
+.menu-list .design{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.nav,.invoice{
+    background-color: #1D211C;
+}
+.menu-list-item a {
+color: antiquewhite ;
+}
+.menu-list-item a:hover{
+   font-size: 16px;
+}
+.menu-list-item{
+    font-size: 15px;
+    margin: 10px;
+    width: 100%;
+}
+
+   
+
+/*menu end*/
+
+/* orders */
+
+
+
+.btn-order{
+   background-color:  #1D211C;
+    border-style: solid;
+    color: antiquewhite;
+    height: 80px;
+}
+
+.order-text{font-size: 15px;}
+.order-text-order-managment{font-size: 20px;}
+.btn-order:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.fa-money{
+    font-size: 30px;
+}
+
+/* search */
+.input-group{
+    width: 200px;
+}
+/* categories*/
+
+
+/*invoice*/
+
+.invoice{
+    overflow: scroll;
+    height: 950px;
+}
+.invoice-item{
+    margin-bottom: 20px;
+    border-style: solid;
+    height: 110px;
+   
+}
+.img-invoice{
+    margin: 4px;
+}
+.img-invoice img{
+    width: 80px;
+}
+.text-invoice{
+    width: 400px;
+    height: 100px;
+}
+
+/*ordes*/
+.menu{
+    overflow: scroll;
+    height: 480px !important;
+    margin: 30px;
+}
+.menu-analytics{
+    overflow: scroll;
+    height: 800px !important;
+    margin: 30px;
+    background-color: aliceblue;
+}
+.menu-items{
+    background-color: #1D211C; 
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.menu-items-order-managment{
+    background-color: #1D211C; 
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.menu-items:hover{
+    background-color:white;
+    color: #1D211C !important;
+}
+.menu-dis{
+    margin: 0px;
+    font-size: 10px;
+}
+
+.menu-price{
+    margin-right: 90px;
+  color: wheat;
+  background-color: rgb(119, 10, 10);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.counter {
+    width: 100px;
+ margin-top: 10px;
+    display: flex;
+   
+}
+.counter input {
+    width: 20px;
+   border-radius: 20px;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    background: #e0e2e5;
+    color: #322f2f;
+    appearance: none;
+    outline: 0;
+    margin-bottom: 10px;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 5px;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+/* payment method*/
+.pament-button{
+    margin: 20px;
+}
+.btn-payment{
+    color: bisque;
+    margin: 5px;
+    font-size: 15px;
+
+}
+.receipt{
+    text-align: center;
+    width: 350px;
+}
+.reciept-items{
+    display:flex;
+
+}
+.reciept-items p{
+    font-size: 12px;
+}
+.reciept-item-list{
+    margin-right: 20px;
+}
+.receipt-list1{
+    float: right;
+    width: 150px;
+}
+.receipt-list2{
+   
+    width: 150px;
+}
+.receipt-list1 p{
+    text-align-last:left;
+}
+
+.receipt-list2 p{
+    text-align-last: right;
+}
+
+
+.invoice-quantity input{
+width: 2rem;
+border-radius: 10px;
+appearance: none;
+text-align: center;
+}
+
+.invoice-quantity{
+    margin-bottom: 5px;
+}
+.invoice-quantity span{
+    
+    font-size: 20px;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+/* Order Section */
+.menu-oders{
+    overflow: scroll;
+    height: 100% !important;
+    margin: 30px;
+}
+
+/* analytics section*/
+.daily-report{
+    display: flex;
+}
+.daily-report-item{
+    width: 200px;
+    height: 120px;
+    
+    background-color:white;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+
+/* customer feedback*/
+.costumer-feedback{
+    background-color: #353434;
+    margin-top: 5px;
+
+
+}
+.customer-name{
+    margin: 10px;
+    font-size: 15px;
+}
+/*cus massage*/
+.cus-massage{
+    background-color:  #1D211C;
+    height: 1000px;
+    margin-top: 10px;
+    overflow:scroll;
+}
+.cus-massage-tittle{
+    color: antiquewhite;
+}
+
+.cus-massage-head{
+    margin: 10px;
+    background-color: #353434;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.massage-feedback{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.table-customer{
+    width: 500px;
+}
+.table-customer tr:hover{
+    color: aliceblue;
+
+}
+.table-customer tr{
+    text-align: center;
+}

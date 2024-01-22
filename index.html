@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+        <!---Fontawesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" >
+    
+        <!--JS AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
+          <!-- owl carousel css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      
+    <!-- owl carousel theme.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+    
+    <!-- owl carousel js file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+     
+        <!--video play button cdn-->
+     
+      
+        <title>Gat Resto Dashboard</title>
+        <link rel="icon" href="img/gatmedia.png" type="image/x-icon">
+    </head>
+<body>
+    <div class="">
+        <div class="row no-gutters ">
+            <!--Tittle bar start-->
+            <div class="col-sm-12 text-center">
+        <!---Tittle bar-->
+         <nav  class="navbar navbar-expand-lg navbar-light">
+        <div class="logo">
+          <img style="width: 50px; ;" src="image/KAMl.png" alt="">
+      </div>
+          <h5 class="text-white">Dashboard</h5>
+          <a class="navbar-brand" href="#">  </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text text-white p-2">
+            <img width="40" class="rounded-circle" src="user_pic/" alt="" > 
+            </span>
+  
+            
+            <a  href="" class="navbar-text text-white p-2">
+              <i class="fa fa-cogs" aria-hidden="true"></i> Profile
+            </a>
+             <a  href="../home" class="navbar-text text-white p-2">
+              <i class="fa fa-home" aria-hidden="true"></i>Home
+            </a>
+            <a href="logout" class="navbar-text text-white p-2">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+            </a>
+           
+          </div>
+        </nav>
+      <!--end tittle bar-->
+            </div>
+            <!--Tittle bar end-->
+
+            <!--Nav menu Start-->
+            <div class="col-sm-1 menu-list  mt-2 ">
+                <!--nav--->
+                <div class=" menu-list-item-head  ">
+                    <div class="    pt-4 ">
+                        <div class=" no-gutters">
+                            <div class="   menu-list-item ">
+                                <a class=" " href="dashboard" ><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a> 
+                             </div>
+                    <hr>
+                             <div class="   menu-list-item ">
+                                <a class="  " href="menu" ><i class="fa fa-folder-open-o" aria-hidden="true"></i> Menu</a> 
+                             </div>
+                    <hr>
+                             <div class="   menu-list-item ">
+                                <a class=" " href="customer" ><i class="fa fa-handshake-o" aria-hidden="true"></i> Customers</a> 
+                             </div>
+                    <hr>
+                   
+                    <div class="  menu-list-item">
+                        <a   class=" "  href="order"> <i class="fa fa-hourglass-half" aria-hidden="true"></i> Orders </a> 
+                     </div>
+                     <hr><div class="   menu-list-item">
+                        <a class="   " href="user" ><i class="fa fa-user" aria-hidden="true"></i> Users  </a> 
+                     </div>
+                    <hr>
+                    <div class="   menu-list-item ">
+                        <a class="  " href="#" ><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a> 
+                     </div>
+            <hr>
+                             <div class="   menu-list-item ">
+                                <a class=" " href="report" ><i class=" fa                 fa-newspaper-o'" style="font-size:15px"></i><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</a> 
+                             </div>
+    
+    
+    
+    
+       
+    
+    
+        
+        </div>
+    
+               </div>
+    
+                 </div>
+                 <!--end nav-->
+                 <div class="design">Develope by @Gatogo</div>
+            </div>
+            <!--Nav menu end-->
+
+            <!--Main body Start-->
+            <div class="col-sm-8 mt-2">
+                <!--info Section start-->
+               <div class="ads">
+                <img style="width: 100%; height: 200px;" src="Image/360_F_504084251_S3KmrYmDWhqxc7rwEedTn5zsTSX9hwVZ.jpg" alt="">
+               </div>
+               <hr class="bg-success">
+               <!--info Section end-->
+
+               <!--search section start-->
+
+
+      <center>
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>Categories</h5>
+                <div id="filters" class="d-flex button-group">
+                    <div class="col-sm-2 ">
+                        <button  data-filter="*" class=" btn-order text-center  btn ">
+                            <img style="width: 50px;" src="Image/all.jpg" alt="">
+                            <p class="text-center order-text">All Dishes</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button data-filter=".pizza" class=" btn-order text-center btn ">
+                            <img style="width: 50px;" src="Image/pngegg.png" alt="">
+                            <p class="text-center order-text">Pizza</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button  data-filter=".kebab" class=" btn-order text-center btn ">
+                            <img style="width: 50px;" src="Image/kibab.png" alt="">
+                            <p class="text-center order-text"> kebab</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button  data-filter=".frise" class=" btn-order  text-center btn ">
+                            <img style="width: 50px;" src="Image/fire.png" alt="">
+                            <p class="text-center order-text">Frise</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button  data-filter=" .burger"  class=" btn-order  text-center btn ">
+                            <img style="width: 50px;" src="Image/buger.png" alt="">
+                            <p class="text-center order-text">hamburger</p>
+                        </button>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button  data-filter=".local"  class=" btn-order  text-center btn ">
+                            <img style="width: 50px;" src="Image/local.jpg" alt="">
+                            <p class="text-center order-text">Local Dish</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      </center>            
+      <hr class="bg-success">
+                <!--search section end-->
+                <!--Orders start-->
+                <h5 class="text-center">Menu</h5>
+            
+                <div id="myList" class="menu row ">
+                   
+                    <!--menu items 1-->
+                    <div id="pizza" class=" menu-items  pizza">
+                        <div class="d-flex ">
+                            <img style="width: 120px; height: 120px; margin: 10px;" src="Image/p1.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Pizza with tomatos</b></p><br>
+                            <P class="menu-dis">Pizza with tomatos, New York-style pizza Italian</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵100</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--menu items 2-->
+                    <div id="burger" class=" menu-items burger  ">
+                        <div class="d-flex ">
+                            <img style="width: 120px; height: 120px; margin: 10px;" src="Image/burgerc.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Burger Cheaps</b></p><br>
+                            <P class="menu-dis">Hamburger Slider Steers French fries Pizza</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵50</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--menu items 3-->
+                    <div id="frise" class=" menu-items frise ">
+                        <div class="d-flex ">
+                            <img style="width: 120px;height: 120px; margin: 10px;" src="Image/fli2.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Platter of grilled lamb</b></p><br>
+                            <P class="menu-dis"> Italian cuisine Pizza Pasta Food Plate, healthy food,</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵200</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--menu items 1-->
+                    <div id="pizza" class=" menu-items kebab ">
+                        <div class="d-flex ">
+                            <img style="width: 120px; height: 120px; margin: 10px;" src="Image/kibab.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Shish kebab Barbecue</b></p><br>
+                            <P class="menu-dis">Shish kebab Barbecue Mediterranean cuisine Hamburger</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵100</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--menu items 2-->
+                    <div id="burger" class=" menu-items  burger ">
+                        <div class="d-flex ">
+                            <img style="width: 120px; height: 120px; margin: 10px;" src="Image/burger2.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>three patty burger</b></p><br>
+                            <P class="menu-dis">Hamburger Veggie burger Fatburger Restaurant Cheese</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵50</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--menu items 3-->
+                    <div id="flirs" class=" menu-items burger">
+                        <div class="d-flex ">
+                            <img style="width: 120px;height: 120px; margin: 10px;" src="Image/burger3.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Cheeseburger Hamburger</b></p><br>
+                            <P class="menu-dis">Cheeseburger Hamburger Whopper French fries Burger King</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵200</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                         <!--menu items 1-->
+                         <div id="pizza" class=" menu-items pizza ">
+                            <div class="d-flex ">
+                                <img style="width: 120px; height: 120px; margin: 10px;" src="Image/pngegg.png" alt="">
+                                <div class="menu-text">
+                                    <p class="menu-tittle m-2"><b>Pizza with tomatos</b></p><br>
+                                <P class="menu-dis">Pizza with tomatos, New York-style pizza Italian</P>
+                                <div class="menu-tag">
+                                    <div class="counter">
+                                        <p class="menu-price "><b>₵100</b></p>
+                                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                        <input type="text" value="1">
+                                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--menu items 2-->
+                        <div id="burger" class=" menu-items burger ">
+                            <div class="d-flex ">
+                                <img style="width: 120px; height: 120px; margin: 10px;" src="Image/burgerc.png" alt="">
+                                <div class="menu-text">
+                                    <p class="menu-tittle m-2"><b>Burger Cheaps</b></p><br>
+                                <P class="menu-dis">Hamburger Slider Steers French fries Pizza</P>
+                                <div class="menu-tag">
+                                    <div class="counter">
+                                        <p class="menu-price "><b>₵50</b></p>
+                                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                        <input type="text" value="1">
+                                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--menu items 3-->
+                        <div id="flirs" class=" menu-items frise ">
+                            <div class="d-flex ">
+                                <img style="width: 120px;height: 120px; margin: 10px;" src="Image/f3.png" alt="">
+                                <div class="menu-text">
+                                    <p class="menu-tittle m-2"><b>fried chicken wings </b></p><br>
+                                <P class="menu-dis">  French fries Chicken and chips Fried chicken Fast food Chicken fingers</P>
+                                <div class="menu-tag">
+                                    <div class="counter">
+                                        <p class="menu-price "><b>₵200</b></p>
+                                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                        <input type="text" value="1">
+                                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     <!--menu items 3-->
+                     <div id="flirs" class=" menu-items frise ">
+                        <div class="d-flex ">
+                            <img style="width: 120px;height: 120px; margin: 10px;" src="Image/f2.png" alt="">
+                            <div class="menu-text">
+                                <p class="menu-tittle m-2"><b>Potato fries</b></p><br>
+                            <P class="menu-dis"> French fries Pizza Sushi Potato Hamburger</P>
+                            <div class="menu-tag">
+                                <div class="counter">
+                                    <p class="menu-price "><b>₵200</b></p>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                  </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--menu items 3-->
+                        <div id="flirs" class=" menu-items pizza ">
+                            <div class="d-flex ">
+                                <img style="width: 120px;height: 120px; margin: 10px;" src="Image/p4.png" alt="">
+                                <div class="menu-text">
+                                    <p class="menu-tittle m-2"><b>Junk food Kosher</b></p><br>
+                                <P class="menu-dis">Junk food Kosher foods Pizza Fast food Samosa</P>
+                                <div class="menu-tag">
+                                    <div class="counter">
+                                        <p class="menu-price "><b>₵200</b></p>
+                                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                        <input type="text" value="1">
+                                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                      </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+
+
+                    
+                    
+                </div>
+
+         
+                <!--Order end-->
+            </div>
+            <!--Main body end-->
+
+            <!--Invoice Section start-->
+           <div class="col-sm-3 invoice mt-2">
+            <h5 class="invoice-title text-center">Customer Details</h5>
+
+            <form class="m-2">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Full Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Customer name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contact</label>
+                  <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Contact Number">
+                </div>
+              </form>
+
+            <h5 class="invoice-title text-center">Invoice</h5>
+            <div class="d-flex invoice-item m-2">
+                <div class="img-invoice">
+                    <img src="Image/fli2.png" alt="">
+                </div>
+                <div class="text-invoice">
+                   <span class="text-white"><b>Platter of grilled lamb</b></span><br>
+                   <span class="text-white">2x</span> <br>
+                   <span class="text-white">Small pepper</span> <br>
+                   <div class="menu-tag ">
+                    <div class="row no-gutters">
+                        <div class="invoice-price col-6">
+                            <b> ₵400</b>
+                        </div>
+                        <div class="invoice-quantity col-6">
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+          
+
+            <h5 class="invoice-title text-center"> Payment Method</h5>
+            <div class="pament-button text-center">
+               
+                <button  class=" btn-payment btn-outline-light  text-center btn ">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <p class="text-center">Mobile</p>
+                </button>
+
+                <button  class=" btn-payment btn-outline-light  text-center btn ">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="text-center">Mobile</p>
+                </button>
+
+                <button  class=" btn-payment btn-outline-light  text-center btn ">
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                    <p class="text-center">Bank </p>
+                </button>
+              
+                <h5 class="invoice-title text-center">Receipt</h5>
+                <div class="receipt  bg-light text-dark">
+                    <div class="reciept-title text-center">
+                        <p>The Kamb  Restaurant 189,<br> Accra awoshi <br> 0540948579</p>
+                    </div>
+
+                    <div class="reciept-menu text-center">
+                        <div class="reciept-items ">
+                            <div class="receipt-list1 ml-1 "><p><b>Order :</b> 26</p> </div>
+                            <div class="receipt-list2  "> <p> 1/19/2024</p></div>
+                            </div>
+                            <div class="reciept-items ">
+                             <div class="receipt-list1 ml-1 "><p><b>Host :</b> Margret</p> </div>
+                             <div class="receipt-list2  "> <p>7:37 am</p></div>
+                             </div>
+         
+                             <div class="reciept-items ">
+                                 <div class="receipt-list1 ml-1 "><p>2 Platter of grilled lamb</p> </div>
+                                 <div class="receipt-list2  "> <p>₵100</p></div>
+                             </div>
+         
+                             <div class="reciept-items ">
+                                 <div class="receipt-list1 ml-1 "><p>4 Burger Cheaps</p> </div>
+                                 <div class="receipt-list2  "> <p>₵300</p></div>
+                             </div>
+         
+                             <div class="reciept-items ">
+                                 <div class="receipt-list1 ml-1 "><p>2 Pizza with tomatos</p> </div>
+                                 <div class="receipt-list2  "> <p>₵100</p></div>
+                             </div>
+
+                    </div>
+                 
+
+                    <div class="total">
+                        <p>Subtotal : ₵500</p>
+                        <p>Tax : ₵50</p>
+                        <p>Total :  ₵550</p>
+                        <p>Payment Method : MoMo</p>
+                    </div>
+                    <div class="reciept-title text-center">
+                        <p style="font-size: 12px;">Customer Copy<br> Thank you for Visiting <br>The Kamb  Restaurant</p>
+                    </div>
+                        
+                </div>
+
+                <button class="btn btn-success"> Confirm Payment</button>
+                
+            </div>
+            
+
+           </div>
+            <!--Invoice Section end-->
+
+           
+        </div>
+
+    </div>
+    
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

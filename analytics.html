@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+        <!---Fontawesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" >
+    
+        <!--JS AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
+          <!-- owl carousel css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      
+    <!-- owl carousel theme.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+    
+    <!-- owl carousel js file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+     
+        <!--graph cdn-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+     
+      
+        <title>Gat Resto Analytics</title>
+        <link rel="icon" href="img/gatmedia.png" type="image/x-icon">
+    </head>
+<body>
+    <div class="">
+        <div class="row no-gutters ">
+            <!--Tittle bar start-->
+            <div class="col-sm-12 text-center">
+        <!---Tittle bar-->
+         <nav  class="navbar navbar-expand-lg navbar-light">
+        <div class="logo">
+          <img style="width: 50px; ;" src="image/KAMl.png" alt="">
+      </div>
+          <h5 class="text-white">Reports and analytics</h5>
+          <a class="navbar-brand" href="#">  </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text text-white p-2">
+            <img width="40" class="rounded-circle" src="user_pic/" alt="" > 
+            </span>
+  
+            
+            <a  href="" class="navbar-text text-white p-2">
+              <i class="fa fa-cogs" aria-hidden="true"></i> Profile
+            </a>
+             <a  href="../home" class="navbar-text text-white p-2">
+              <i class="fa fa-home" aria-hidden="true"></i>Home
+            </a>
+            <a href="logout" class="navbar-text text-white p-2">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+            </a>
+           
+          </div>
+        </nav>
+      <!--end tittle bar-->
+            </div>
+            <!--Tittle bar end-->
+
+            <!--Nav menu Start-->
+            <div class="col-sm-1 menu-list  mt-2 ">
+                <!--nav--->
+                <div class=" menu-list-item-head  ">
+                    <div class="    pt-4 ">
+                        <div class=" no-gutters">
+                            <div class="   menu-list-item ">
+                                <a class=" " href="dashboard" ><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a> 
+                             </div>
+                    <hr>
+                             <div class="   menu-list-item ">
+                                <a class="  " href="menu" ><i class="fa fa-folder-open-o" aria-hidden="true"></i> Menu</a> 
+                             </div>
+                    <hr>
+                             <div class="   menu-list-item ">
+                                <a class=" " href="customer" ><i class="fa fa-handshake-o" aria-hidden="true"></i> Customers</a> 
+                             </div>
+                    <hr>
+                   
+                    <div class="  menu-list-item">
+                        <a   class=" "  href="order"> <i class="fa fa-hourglass-half" aria-hidden="true"></i> Orders </a> 
+                     </div>
+                     <hr><div class="   menu-list-item">
+                        <a class="   " href="user" ><i class="fa fa-user" aria-hidden="true"></i> Users  </a> 
+                     </div>
+                    <hr>
+                    <div class="   menu-list-item ">
+                        <a class="  " href="#" ><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a> 
+                     </div>
+            <hr>
+                             <div class="   menu-list-item ">
+                                <a class=" " href="report" ><i class=" fa                 fa-newspaper-o'" style="font-size:15px"></i><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</a> 
+                             </div>
+    
+    
+    
+    
+       
+    
+    
+        
+        </div>
+    
+               </div>
+    
+                 </div>
+                 <!--end nav-->
+                 <div class="design">Develope by @Gatogo</div>
+            </div>
+            <!--Nav menu end-->
+
+            <!--Main body Start-->
+            <div class="col-sm-8 mt-2">
+            
+               <!--search section start-->
+
+
+               <center>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="filters" class="d-flex button-group">
+                            <div class="col-sm-2 ">
+                                <a data-toggle="collapse" href="#collapseOne"class=" btn-order  text-center btn ">
+                                    <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                    <p class="text-center order-text-order-managment">Daily</p>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 ">
+                                <a  data-toggle="collapse" href="#collapseTwo" class="collapsed btn-order text-center btn ">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <p class="text-center order-text-order-managment">Weekly</p>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 ">
+                                <a data-toggle="collapse" href="#collapseThree"class=" btn-order  collapsed text-center btn ">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    <p class="text-center order-text-order-managment">Monthly</p>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 ">
+                                <a href="#collapseFour" class="collapsed btn-order  text-center btn " data-toggle="collapse">
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                    <p class="text-center order-text-order-managment">Revenue</p>
+                                </a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+              
+              </center>            
+      <hr class="bg-success">
+                <!--search section end-->
+                <!--Orders start-->
+                
+            
+                <div id="myList" class="menu-analytics row no-gutters">
+                    <div class="daily-report">
+                        <div class="daily-report-item">
+                                    <b><i class="fa fa-money" aria-hidden="true"></i></b>
+                                    <p class="text-center order-text-order-managment"><b>Revenue</b></p>
+                                    <p class="text-center order-text-order-managment"><b>GHC3000</b></p>
+                        </div>
+
+                        <div class="daily-report-item">
+                            <b><i class="fa fa-handshake-o" aria-hidden="true"></i></b>
+                            <p class="text-center order-text-order-managment"><b>Orders</b></p>
+                            <p class="text-center order-text-order-managment"><b>50</b></p>
+                        </div>
+
+                        <div class="daily-report-item">
+                            <b><i class="fa fa-user-circle-o" aria-hidden="true"></i></i></b>
+                            <p class="text-center order-text-order-managment"><b>New Customers</b></p>
+                            <p class="text-center order-text-order-managment"><b>10</b></p>
+                        </div>
+                    </div>
+
+                    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+        
+                </div>
+
+         
+                <!--Order end-->
+            </div>
+            <!--Main body end-->
+
+            <!--Invoice Section start-->
+           <div class="col-sm-3 invoice mt-2">
+       
+            <div
+            id="myChart" style="width:100%; max-width:600px; height:300px;">
+            </div>
+
+            <div id="myChart2" style="width:100%; margin-top: 10px; max-width:600px; height:300px;"></div>
+
+
+            <div class="costumer-feedback">
+                <h5 class="text-center">Costomer Feedback</h5>
+                <div class="row p-4">
+                    <div class="col-12 bg-success text-center text-white"><b>New Massage</b></div>
+                    <div class="col-4"> <p class="customer-name"><b>Kofi Samu</b></p></div>
+                    <div class="col-4"> <p class="customer-name"><b>0540948579</b></p></div>
+                    <div class="col-4"> <p class="customer-name"><b>1/20/2024</b></p></div>
+                    <div class="col-12 text-center"> <p class="customer-name"><b>#333</b></p></div>
+                    <div class="col-12 text-center"> <p class="customer-name">Massage</p></div>
+                    <div class="col-12 border"> <p class="customer-name m-2">Your food was to salty</p></div>
+                    <button class="btn btn-success m-2">Seen</button>
+
+                </div>
+               </div>
+           </div>
+
+           
+            <!--Invoice Section end-->
+
+           
+        </div>
+
+    </div>
+    
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <!--google graph-->
+   
+ 
+
+<script>
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    function drawChart() {
+    
+    // Set Data
+    const data = google.visualization.arrayToDataTable([
+      ['Menu', 'Mhl'],
+      ['Pizza',54.8],
+      ['Burger',48.6],
+      ['Local Dish',44.4],
+      ['Flires',23.9],
+      ['Kebab',14.5]
+    ]);
+    
+    // Set Options
+    const options = {
+      title:'Menu Performance',
+      is3D:true
+    };
+    
+    // Draw
+    const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+    
+    }
+    </script>
+
+<script>
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    function drawChart() {
+    
+    // Set Data
+    const data = google.visualization.arrayToDataTable([
+      ['Revenue', 'GHC'],
+      ['Monday',5500],
+      ['Tuesday',4900],
+      ['Wednesday',4400],
+      ['Thursday',2400],
+      ['Friday',1500]
+    ]);
+    
+    // Set Options
+    const options = {
+      title:'Daily  Revenue'
+    };
+    
+    // Draw
+    const chart = new google.visualization.BarChart(document.getElementById('myChart2'));
+    chart.draw(data, options);
+    
+    }
+    </script>
+
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', '2024 Revenue (GHC)', '2023 Revenue (GHC)'],
+        ['Januuary',  1000,      400],
+        ['Febuary',  1170,      460],
+        ['March',  660,       1120],
+        ['April',  1030,      540],
+        ['May',  1030,      540]
+      ]);
+
+      var options = {
+        title: 'Company Performance',
+        hAxis: {title: 'Months',  titleTextStyle: {color: '#333'}},
+        vAxis: {minValue: 0}
+      };
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+</body>
+
+</html>
